@@ -1,0 +1,150 @@
+(defn update-vector [input-vector]
+  (map-indexed
+   (fn [index value]
+     (if (< index value)
+       (inc value)
+       value))
+   input-vector))
+
+(def input-vector [2 5 1 0 0 1])
+(def result-vector (update-vector input-vector))
+
+(println "Input Vector:" input-vector)
+(println "Result Vector:" result-vector)
+; Syntax error compiling at (c:\Users\al031880\Desktop\code\AOC\Day-4\clojure-project\.calva\output-window\output.calva-repl:13:1).
+; Unable to resolve symbol: result-vector in this context
+clj꞉clojure-project.core꞉> 
+(defn update-vector [input-vector]
+  (map-indexed
+   (fn [index value]
+     (if (< index value)
+       (inc value)
+       value))
+   input-vector))
+
+(def input-vector [2 5 1 0 0 1])
+(def result-vector (update-vector input-vector))
+; Syntax error compiling at (c:\Users\al031880\Desktop\code\AOC\Day-4\clojure-project\.calva\output-window\output.calva-repl:26:20).
+; Unable to resolve symbol: update-vector in this context
+clj꞉clojure-project.core꞉> 
+#'clojure-project.core/result-vector
+clj꞉clojure-project.core꞉> 
+Input Vector: [2 5 1 0 0 1]
+Result Vector: (3 6 1 0 0 1)
+nil
+clj꞉clojure-project.core꞉> 
+(#'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array #'clojure-project.core/all-cards-array)
+nil
+clj꞉clojure-project.core꞉> 
+clojure.lang.PersistentVector
+nil
+clj꞉clojure-project.core꞉> 
+[Ljava.lang.Integer;
+nil
+clj꞉clojure-project.core꞉> 
+#object[[Ljava.lang.Integer; 0x52aacfb7 [Ljava.lang.Integer;@52aacfb7]
+nil
+clj꞉clojure-project.core꞉> 
+; Execution error (ArrayStoreException) at jdk.internal.reflect.NativeMethodAccessorImpl/invoke0 (NativeMethodAccessorImpl.java:-2).
+; java.lang.Long
+clj꞉clojure-project.core꞉> 
+; Execution error (IllegalArgumentException) at clojure-project.core/foo (form-init4188420668800161759.clj:55).
+; No matching method aset found taking 3 args
+clj꞉clojure-project.core꞉> 
+(def is (int-array 10))
+(vec is)
+(aset-int is 3 31415)
+31415
+(vec is)
+; Syntax error compiling at (c:\Users\al031880\Desktop\code\AOC\Day-4\clojure-project\.calva\output-window\output.calva-repl:58:1).
+; Unable to resolve symbol: is in this context
+clj꞉clojure-project.core꞉> 
+[0 0 0 31415 0 0 0 0 0 0]
+clj꞉clojure-project.core꞉> 
+; Execution error (IllegalArgumentException) at clojure-project.core/foo (form-init4188420668800161759.clj:59).
+; No matching method aset found taking 3 args
+clj꞉clojure-project.core꞉> 
+[0 0 0 31415 0 0 0 0 0 0]
+clj꞉clojure-project.core꞉> 
+[0 0 0 31415 0 0 0 0 0 0]
+clj꞉clojure-project.core꞉> 
+[0 0 0 31415 0 0 0 0 0 0]
+clj꞉clojure-project.core꞉> 
+#object[clojure.core$vec 0x7290d126 clojure.core$vec@7290d126]nil
+clj꞉clojure-project.core꞉> 
+[0 0 0 31415 0 0 0 0 0 0]
+clj꞉clojure-project.core꞉> 
+; Execution error (IllegalArgumentException) at java.lang.reflect.Array/setInt (Array.java:-2).
+; Argument is not an array
+clj꞉clojure-project.core꞉> 
+; Execution error (IllegalArgumentException) at java.lang.reflect.Array/setInt (Array.java:-2).
+; Argument is not an array of primitive type
+clj꞉clojure-project.core꞉> 
+; Execution error (IllegalArgumentException) at clojure-project.core/foo (form-init4188420668800161759.clj:54).
+; Don't know how to create ISeq from: java.lang.Long
+clj꞉clojure-project.core꞉> 
+; Execution error (IllegalArgumentException) at java.lang.reflect.Array/setInt (Array.java:-2).
+; Argument is not an array of primitive type
+clj꞉clojure-project.core꞉> 
+[10 10 10 6 7 3 10 5 2 6 4 3 1 8 0 4 0 3 0 4 1 0 0 0 5 9 1 3 0 10 9 9 8 1 6 3 6 5 2 1 2 1 0 3 5 2 5 2 1 9 5 3 0 5 0 3 0 1 0 6 10 10 8 10 10 5 10 10 7 10 3 0 9 3 5 5 2 2 2 2 1 1 0 0 0 9 6 10 1 6 3 5 2 0 1 2 1 0 0 10 3 7 10 5 10 2 8 3 5 0 2 2 3 2 1 0 10 4 2 6 3 1 10 6 8 3 2 2 5 2 2 2 0 0 10 10 0 10 1 10 1 10 9 10 0 7 2 6 2 8 4 7 5 3 0 0 0 1 0 10 1 0 8 2 0 5 3 0 2 8 9 7 0 1 4 0 2 1 1 0 7 5 6 10 6 10 10 3 5 4 6 10 9 2 9 2 6 1 5 4 1 2 1 0]
+clj꞉clojure-project.core꞉> 
+#object[clojure.core$vec 0x7290d126 "clojure.core$vec@7290d126"]
+clj꞉clojure-project.core꞉> 
+; Execution error (IllegalArgumentException) at java.lang.reflect.Array/setInt (Array.java:-2).
+; Argument is not an array
+clj꞉clojure-project.core꞉> 
+; Execution error (IllegalArgumentException) at clojure-project.core/foo (form-init4188420668800161759.clj:55).
+; No matching method aset found taking 3 args
+clj꞉clojure-project.core꞉> 
+; Execution error (IllegalArgumentException) at clojure-project.core/foo (form-init4188420668800161759.clj:55).
+; No matching method aset found taking 3 args
+clj꞉clojure-project.core꞉> 
+    (vec matches)
+(aset vec 3 31415)
+(into [] matches)
+[10 10 10 6 7 3 10 5 2 6 4 3 1 8 0 4 0 3 0 4 1 0 0 0 5 9 1 3 0 10 9 9 8 1 6 3 6 5 2 1 2 1 0 3 5 2 5 2 1 9 5 3 0 5 0 3 0 1 0 6 10 10 8 10 10 5 10 10 7 10 3 0 9 3 5 5 2 2 2 2 1 1 0 0 0 9 6 10 1 6 3 5 2 0 1 2 1 0 0 10 3 7 10 5 10 2 8 3 5 0 2 2 3 2 1 0 10 4 2 6 3 1 10 6 8 3 2 2 5 2 2 2 0 0 10 10 0 10 1 10 1 10 9 10 0 7 2 6 2 8 4 7 5 3 0 0 0 1 0 10 1 0 8 2 0 5 3 0 2 8 9 7 0 1 4 0 2 1 1 0 7 5 6 10 6 10 10 3 5 4 6 10 9 2 9 2 6 1 5 4 1 2 1 0]
+clj꞉clojure-project.core꞉> 
+
+(aset vec 3 31415)
+(into [] matches)
+[10 10 10 6 7 3 10 5 2 6 4 3 1 8 0 4 0 3 0 4 1 0 0 0 5 9 1 3 0 10 9 9 8 1 6 3 6 5 2 1 2 1 0 3 5 2 5 2 1 9 5 3 0 5 0 3 0 1 0 6 10 10 8 10 10 5 10 10 7 10 3 0 9 3 5 5 2 2 2 2 1 1 0 0 0 9 6 10 1 6 3 5 2 0 1 2 1 0 0 10 3 7 10 5 10 2 8 3 5 0 2 2 3 2 1 0 10 4 2 6 3 1 10 6 8 3 2 2 5 2 2 2 0 0 10 10 0 10 1 10 1 10 9 10 0 7 2 6 2 8 4 7 5 3 0 0 0 1 0 10 1 0 8 2 0 5 3 0 2 8 9 7 0 1 4 0 2 1 1 0 7 5 6 10 6 10 10 3 5 4 6 10 9 2 9 2 6 1 5 4 1 2 1 0]
+clj꞉clojure-project.core꞉> 
+(aset matches 3 31415)
+(into [] matches)
+[10 10 10 6 7 3 10 5 2 6 4 3 1 8 0 4 0 3 0 4 1 0 0 0 5 9 1 3 0 10 9 9 8 1 6 3 6 5 2 1 2 1 0 3 5 2 5 2 1 9 5 3 0 5 0 3 0 1 0 6 10 10 8 10 10 5 10 10 7 10 3 0 9 3 5 5 2 2 2 2 1 1 0 0 0 9 6 10 1 6 3 5 2 0 1 2 1 0 0 10 3 7 10 5 10 2 8 3 5 0 2 2 3 2 1 0 10 4 2 6 3 1 10 6 8 3 2 2 5 2 2 2 0 0 10 10 0 10 1 10 1 10 9 10 0 7 2 6 2 8 4 7 5 3 0 0 0 1 0 10 1 0 8 2 0 5 3 0 2 8 9 7 0 1 4 0 2 1 1 0 7 5 6 10 6 10 10 3 5 4 6 10 9 2 9 2 6 1 5 4 1 2 1 0]
+clj꞉clojure-project.core꞉> 
+#object[clojure_project.core$loop_through 0x2f8938e8 "clojure_project.core$loop_through@2f8938e8"]
+clj꞉clojure-project.core꞉> 
+#object[clojure_project.core$loop_through 0x65cd54f3 "clojure_project.core$loop_through@65cd54f3"]
+clj꞉clojure-project.core꞉> 
+#object[clojure_project.core$loop_through 0x3ec605f1 "clojure_project.core$loop_through@3ec605f1"]
+clj꞉clojure-project.core꞉> 
+#object[clojure_project.core$loop_through 0x7981fb11 "clojure_project.core$loop_through@7981fb11"]
+clj꞉clojure-project.core꞉> 
+#object[clojure_project.core$print_matches 0x477f59e "clojure_project.core$print_matches@477f59e"]
+clj꞉clojure-project.core꞉> 
+; Execution error (IndexOutOfBoundsException) at clojure-project.core/print-matches (form-init4188420668800161759.clj:38).
+; null
+clj꞉clojure-project.core꞉> 
+; Syntax error (IllegalArgumentException) compiling at (c:\Users\al031880\Desktop\code\AOC\Day-4\clojure-project\src\clojure_project\core.clj:40:5).
+; Can't call nil, form: (nil)
+; 
+; Execution error (IndexOutOfBoundsException) at clojure-project.core/print-matches (form-init4188420668800161759.clj:38).
+; null
+clj꞉clojure-project.core꞉> 
+"Done."
+clj꞉clojure-project.core꞉> 
+Card 10: 4
+Card 9: 6
+Card 8: 2
+Card 7: 5
+Card 6: 10
+Card 5: 3
+Card 4: 7
+Card 3: 6
+Card 2: 10
+Card 1: 10
+Card 0: 10
+Done.
+nil
+clj꞉clojure-project.core꞉> 
