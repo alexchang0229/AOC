@@ -14,14 +14,23 @@ class Hand:
 
     def matchJokers(self, cards):
         card_matches = []
+        if all(card == "J" for card in cards):
+            return cards
+
+        seen_cards = []
         for card in cards:
-            card_matches.append(cards.count(card))
+            if card not in seen_cards:
+                seen_cards.append(card)
+                card_matches.append({"card": card, "matches": cards.count(card)})
 
-        # if max(card_matches) == 1:
-        #     return cards
+        cards_by_matches = sorted(
+            card_matches, key=lambda x: x["matches"], reverse=True
+        )
 
-        ind_most_common = card_matches.index(max(card_matches))
-        most_common_card = cards[ind_most_common]
+        if cards_by_matches[0]["card"] == "J":
+            most_common_card = cards_by_matches[1]["card"]
+        else:
+            most_common_card = cards_by_matches[0]["card"]
 
         new_cards = []
         for card in cards:
